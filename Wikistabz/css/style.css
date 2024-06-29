@@ -1,0 +1,154 @@
+/* Importar a fonte do diretório local */
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('../fonts/bergen-sans-semi-bold.otf') format('opentype');
+    /* Adicione formatos adicionais se necessário */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: 'MinhaFonte', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 70px; /* Adicione um padding para o rodapé */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+header #home-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.search-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.search-section form {
+    display: inline-block;
+}
+
+.search-section input[type="text"],
+.search-section button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-section input[type="text"] {
+    width: 200px;
+}
+
+.search-section button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-section button:hover {
+    background-color: #45a049;
+}
+
+.wiki-count {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+}
+
+/* Estilos para o conteúdo principal [WIKIS] */
+main {
+    padding: 20px 0;
+}
+
+.wikis-section {
+    background-color: #ffffff00;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.wiki-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-icon {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Adicionando transição de opacidade */
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1; /* Inicialmente totalmente visível */
+}
+
+.game-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8; /* Reduzir a opacidade ao passar o mouse */
+}
+
+.game-name {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Ocupa toda a largura da viewport */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #555;
+}
